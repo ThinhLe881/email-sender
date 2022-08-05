@@ -1,1 +1,1 @@
-# Email Automator - Thinh Le
+# Email Sender - Thinh Le
