@@ -4,12 +4,14 @@ import glob
 
 subject = "LOOKING FOR CO-OP OPPORTUNITY"
 
+# embed images (for html content, otherwise put in 'attachments/')
 images = {}
 for image in glob.glob('images/*.*'):
     key = image.split('\\')[1]
     value = str(uuid.uuid4())
     images[key] = value
 
+# can be text-only or html (html needs to be modified if it contains images)
 body = f"""
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html
